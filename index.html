@@ -1,104 +1,270 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
+
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>ELITE DESIGN</title>
+  <title>Elite Design</title>
 
   <link rel="stylesheet" href="style.css">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- ICONS -->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
 </head>
 
 <body>
 
-<header>
+<!-- LOGIN -->
 
-  <div class="logo">
-    ELITE DESIGN
-  </div>
+<div class="login-page" id="loginPage">
 
-  <nav>
-    <a href="#">Início</a>
-    <a href="#">Serviços</a>
-    <a href="#">Portfólio</a>
-    <a href="#">Contacto</a>
-  </nav>
+  <div class="particles"></div>
 
-</header>
+  <div class="login-box">
 
-<section class="hero">
-
-  <div class="overlay"></div>
-
-  <div class="hero-content">
-
-    <h1>
-      Transformamos Ideias em Design Profissional
-    </h1>
+    <h1>ELITE DESIGN</h1>
 
     <p>
-      Logotipos, Flyers, Banners, Social Media e identidade visual moderna para destacar o seu negócio.
+      Entre para explorar o mundo criativo
     </p>
 
-    <div class="buttons">
+    <input type="email" id="email" placeholder="Seu Email">
 
-      <a href="https://wa.me/258866874954" class="btn">
-        WhatsApp
-      </a>
+    <input type="text" id="contacto" placeholder="+258 84 000 0000">
 
-      <a href="#servicos" class="btn btn-outline">
-        Ver Serviços
-      </a>
-
-    </div>
+    <button onclick="entrar()">
+      ENTRAR
+    </button>
 
   </div>
 
-</section>
+</div>
 
-<section class="servicos" id="servicos">
+<!-- SITE -->
 
-  <h2>Nossos Serviços</h2>
+<div class="site" id="site">
 
-  <div class="cards">
+  <!-- HEADER -->
 
-    <div class="card">
-      <h3>Logotipo</h3>
-      <p>Criação de marcas modernas e memoráveis.</p>
+  <header>
+
+    <div class="logo">
+      ELITE DESIGN
     </div>
 
-    <div class="card">
-      <h3>Social Media</h3>
-      <p>Posts profissionais para Instagram e Facebook.</p>
+    <nav>
+
+      <a href="#home">Home</a>
+
+      <a href="#skills">Skills</a>
+
+      <a href="#services">Serviços</a>
+
+      <a href="#portfolio">Portfolio</a>
+
+      <a href="#contact">WhatsApp</a>
+
+    </nav>
+
+  </header>
+
+  <!-- HERO -->
+
+  <section class="hero" id="home">
+
+    <div class="hero-overlay">
+
+      <h1>
+        DESIGN GRÁFICO
+      </h1>
+
+      <h2>
+        Premium Creative Experience
+      </h2>
+
+      <p>
+        Photoshop • Illustrator • Branding • Motion Design • Websites
+      </p>
+
+      <button>
+        EXPLORAR
+      </button>
+
     </div>
 
-    <div class="card">
-      <h3>Flyers & Posters</h3>
-      <p>Design publicitário elegante e impactante.</p>
+  </section>
+
+  <!-- SKILLS -->
+
+  <section class="skills" id="skills">
+
+    <h2>Ferramentas Profissionais</h2>
+
+    <div class="skill-box">
+
+      <div class="skill-card photoshop">
+
+        <i class="fa-solid fa-camera-retro"></i>
+
+        <h3>Adobe Photoshop</h3>
+
+        <p>
+          Manipulação profissional de imagens, posters e designs modernos.
+        </p>
+
+      </div>
+
+      <div class="skill-card illustrator">
+
+        <i class="fa-solid fa-pen-nib"></i>
+
+        <h3>Adobe Illustrator</h3>
+
+        <p>
+          Criação de logos, branding e identidade visual premium.
+        </p>
+
+      </div>
+
     </div>
 
-  </div>
+  </section>
 
-</section>
+  <!-- SERVICES -->
 
-<section class="contacto">
+  <section class="services" id="services">
 
-  <h2>Contacto</h2>
+    <h2>Serviços Premium</h2>
 
-  <p>Fale connosco agora mesmo.</p>
+    <div class="cards">
 
-  <a href="tel:+258866874954" class="numero">
-    866874954
-  </a>
+      <div class="card">
 
-</section>
+        <img src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?q=80&w=1200">
 
-<footer>
-  © 2026 ELITE DESIGN — Todos os direitos reservados
-</footer>
+        <h3>Flyer Design</h3>
+
+      </div>
+
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?q=80&w=1200">
+
+        <h3>Business Presentation</h3>
+
+      </div>
+
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=1200">
+
+        <h3>Logo Branding</h3>
+
+      </div>
+
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?q=80&w=1200">
+
+        <h3>Criação de Websites</h3>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- PORTFOLIO -->
+
+  <section class="portfolio" id="portfolio">
+
+    <h2>Portfolio Showcase</h2>
+
+    <div class="portfolio-box">
+
+      <div class="work">
+
+        <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=1200">
+
+        <div class="work-text">
+          Photoshop Editing
+        </div>
+
+      </div>
+
+      <div class="work">
+
+        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=1200">
+
+        <div class="work-text">
+          Logo Branding
+        </div>
+
+      </div>
+
+      <div class="work">
+
+        <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=1200">
+
+        <div class="work-text">
+          Creative Poster
+        </div>
+
+      </div>
+
+      <div class="work">
+
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200">
+
+        <div class="work-text">
+          Website Design
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+
+  <section class="contact" id="contact">
+
+    <h2>WhatsApp</h2>
+
+    <a
+    href="https://wa.me/258866874954"
+    target="_blank"
+    class="whatsapp-btn"
+    >
+
+    <i class="fa-brands fa-whatsapp"></i>
+
+    Falar no WhatsApp
+
+    </a>
+
+    <p>
+      📧 augustoadrianoalfredo0@gmail.com
+    </p>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    © 2026 Elite Design — Creative Studio
+
+  </footer>
+
+</div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
